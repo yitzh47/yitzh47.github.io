@@ -11,6 +11,15 @@
     <title>Hertz Portfolio</title>
 
     <style>
+        #background-code {
+            z-index: -1;
+            position: absolute;
+            width: 100%;
+            left: 0;
+            top: 0;
+
+        }
+
         #dropdownMenuButton1 {
             background-color: transparent;
             color: white;
@@ -52,28 +61,28 @@
             margin: auto;
             margin: 70px 50% 70px 50%;
             gap: 1.5em;
-            
+
         }
 
         @media screen and (min-width: 660px) {
-            #card-holder{
-                grid-template-columns:  1fr 1fr;
+            #card-holder {
+                grid-template-columns: 1fr 1fr;
             }
         }
 
         @media screen and (min-width: 980px) {
-            #card-holder{
-                grid-template-columns:  1fr 1fr 1fr;
+            #card-holder {
+                grid-template-columns: 1fr 1fr 1fr;
             }
         }
 
         @media screen and (min-width: 1200px) {
-            #card-holder{
-                grid-template-columns:  1fr 1fr 1fr 1fr;
+            #card-holder {
+                grid-template-columns: 1fr 1fr 1fr 1fr;
             }
         }
 
-        .nvv{
+        .nvv {
             margin: auto;
         }
 
@@ -90,13 +99,13 @@
 
 
 
-        
-        
 
 
-        
 
-      
+
+
+
+
         }
     </style>
 </head>
@@ -135,7 +144,8 @@
                                     Contact
                                 </button>
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                    <li><a class="dropdown-item" href="https://mail.google.com/mail/u/0/#inbox" target="_blank">Email</a></li>
+                                    <li><a class="dropdown-item" href="https://mail.google.com/mail/u/0/#inbox"
+                                            target="_blank">Email</a></li>
                                     <li><a class="dropdown-item" href="tel:8456330344" target="_blank">Phone</a></li>
                                     <li><a class="dropdown-item" href="#form">Form</a></li>
                                 </ul>
@@ -152,6 +162,8 @@
     </header>
 
     <main class="container border-bottom">
+        <img id="background-code" src="images/image4.jpg">
+
         <div id="card-holder">
             <div class="card" style="width: 18rem;">
                 <img class="card-img-top" src="images/image1.jpg" alt="Card image cap">
