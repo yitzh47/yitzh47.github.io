@@ -1,0 +1,21 @@
+body.admin { background: var(--surface); }
+.admin-header { display: flex; align-items: center; gap: 20px; padding: 12px 20px; background: var(--card); border-bottom: 1px solid var(--border); flex-wrap: wrap; position: sticky; top: 0; z-index: 5; }
+.admin-header nav { display: flex; gap: 14px; flex: 1; flex-wrap: wrap; }
+.admin-header nav a { color: var(--text); text-decoration: none; font-weight: 600; font-size: .92rem; }
+.admin-header nav a[aria-current] { color: var(--brand); }
+.admin-main { padding: 24px 20px; max-width: 1400px; margin: auto; }
+.admin-main table { width: 100%; border-collapse: collapse; font-size: .9rem; }
+.admin-main th, .admin-main td { text-align: left; padding: 8px; border-bottom: 1px solid var(--border); vertical-align: top; }
+.admin-main .card { overflow-x: auto; margin-bottom: 20px; }
+.admin-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); gap: 20px; }
+.kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 14px; margin-bottom: 20px; }
+.kpi { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px; display: grid; gap: 4px; }
+.kpi span { color: var(--muted); font-size: .85rem; } .kpi strong { font-size: 1.5rem; }
+.bars { display: grid; grid-template-columns: repeat(14, 1fr); gap: 6px; align-items: end; height: 180px; }
+.bar { height: 100%; display: flex; flex-direction: column; justify-content: flex-end; align-items: center; gap: 4px; }
+.bar::before { content: ""; width: 100%; height: var(--h); min-height: 2px; background: linear-gradient(var(--brand), var(--brand-2)); border-radius: 6px 6px 0 0; }
+.bar span { font-size: .7rem; color: var(--muted); }
+.status { padding: 2px 8px; border-radius: 99px; font-size: .78rem; font-weight: 700; background: var(--surface); border: 1px solid var(--border); }
+.status-paid, .status-customer, .status-shipped { color: var(--ok); } .status-failed, .status-cancelled, .status-unsubscribed, .status-review { color: var(--danger); } .status-pending, .status-new { color: var(--warn); }
+.login { max-width: 400px; margin: 10vh auto; }
+.toolbar input[type=search] { max-width: 280px; }
